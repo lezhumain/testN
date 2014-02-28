@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="669811e0c894438c94934b796e5af7b3" Name="Diagramme1">
+        <EntityTypeShape EntityType="BDD_SIO7Model.ACTIVITE_COMPLEMENTAIRE" Width="1.5" PointX="7.5" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDD_SIO7Model.AVOIR" Width="1.5" PointX="10.5" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDD_SIO7Model.CALENDRIER" Width="1.5" PointX="8.25" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDD_SIO7Model.COLLABORATEUR" Width="1.5" PointX="5.25" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDD_SIO7Model.COMMUNE" Width="1.5" PointX="7.5" PointY="24.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDD_SIO7Model.COMPOSANT" Width="1.5" PointX="10.25" PointY="44.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDD_SIO7Model.CONSTITUER" Width="1.5" PointX="12.5" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDD_SIO7Model.DATE" Width="1.5" PointX="10.25" PointY="27.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDD_SIO7Model.DEPARTEMENT" Width="1.5" PointX="5.25" PointY="24.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDD_SIO7Model.DIRECTEUR_REGIONAL" Width="1.5" PointX="7.5" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDD_SIO7Model.DOSAGE" Width="1.5" PointX="10.25" PointY="38.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDD_SIO7Model.ETRE_RESPONSABLE" Width="1.5" PointX="10.5" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDD_SIO7Model.FAMILLE" Width="1.5" PointX="8" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDD_SIO7Model.FICHE_FRAIS" Width="1.5" PointX="7.5" PointY="21" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDD_SIO7Model.GERE" Width="1.5" PointX="13.5" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDD_SIO7Model.INCLURE" Width="1.5" PointX="9.75" PointY="23" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDD_SIO7Model.MEDICAMENT" Width="1.5" PointX="10.25" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDD_SIO7Model.MOTIF" Width="1.5" PointX="10.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDD_SIO7Model.OFFRE" Width="1.5" PointX="14.75" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDD_SIO7Model.PARTICIPE" Width="1.5" PointX="9.75" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDD_SIO7Model.POSSEDER" Width="1.5" PointX="12.5" PointY="31" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDD_SIO7Model.PRATICIEN" Width="1.5" PointX="10.25" PointY="30.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDD_SIO7Model.PRESCRIRE" Width="1.5" PointX="12.5" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDD_SIO7Model.PRESENTATION" Width="1.5" PointX="8" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDD_SIO7Model.RAPPORT_DE_VISITE" Width="1.5" PointX="12.5" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDD_SIO7Model.REGION" Width="1.5" PointX="3" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDD_SIO7Model.REMPLACE" Width="1.5" PointX="12.5" PointY="28" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDD_SIO7Model.RESPONSABLE_DE_SECTEUR" Width="1.5" PointX="7.5" PointY="28" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDD_SIO7Model.SECTEUR" Width="1.5" PointX="0.75" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDD_SIO7Model.SPECIALITE" Width="1.5" PointX="10.25" PointY="35.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDD_SIO7Model.sysdiagrams" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDD_SIO7Model.TYPE_FRAIS" Width="1.5" PointX="7.5" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDD_SIO7Model.TYPE_INDIVIDU" Width="1.5" PointX="10.25" PointY="41" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDD_SIO7Model.TYPE_PRATICIEN" Width="1.5" PointX="8" PointY="31.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDD_SIO7Model.praticienAdresse" Width="1.5" PointX="2.75" PointY="1.625" IsExpanded="true" />
+        <AssociationConnector Association="BDD_SIO7Model.FK_ACTIVITE_COMPLEMENTAIRE_matricule_col" ManuallyRouted="false" />
+        <AssociationConnector Association="BDD_SIO7Model.FK_PARTICIPE_num_act" ManuallyRouted="false" />
+        <AssociationConnector Association="BDD_SIO7Model.FK_AVOIR_depot_legal" ManuallyRouted="false" />
+        <AssociationConnector Association="BDD_SIO7Model.FK_AVOIR_matricule_col" ManuallyRouted="false" />
+        <AssociationConnector Association="BDD_SIO7Model.FK_ETRE_RESPONSABLE_JJMMAAAA" ManuallyRouted="false" />
+        <AssociationConnector Association="BDD_SIO7Model.FK_GERE_JJMMAAAA" ManuallyRouted="false" />
+        <AssociationConnector Association="BDD_SIO7Model.FK_DIRECTEUR_REGIONAL_matricule_col" ManuallyRouted="false" />
+        <AssociationConnector Association="BDD_SIO7Model.FK_ETRE_RESPONSABLE_matricule_col" ManuallyRouted="false" />
+        <AssociationConnector Association="BDD_SIO7Model.FK_FICHE_FRAIS_matricule_col" ManuallyRouted="false" />
+        <AssociationConnector Association="BDD_SIO7Model.FK_GERE_matricule_col" ManuallyRouted="false" />
+        <AssociationConnector Association="BDD_SIO7Model.FK_RAPPORT_DE_VISITE_matricule_col" ManuallyRouted="false" />
+        <AssociationConnector Association="BDD_SIO7Model.FK_RESPONSABLE_DE_SECTEUR_matricule_col" ManuallyRouted="false" />
+        <AssociationConnector Association="BDD_SIO7Model.FK_COMMUNE_code_dep" ManuallyRouted="false" />
+        <AssociationConnector Association="BDD_SIO7Model.FK_CONSTITUER_code_comp" ManuallyRouted="false" />
+        <AssociationConnector Association="BDD_SIO7Model.FK_CONSTITUER_depot_legal" ManuallyRouted="false" />
+        <AssociationConnector Association="BDD_SIO7Model.FK_REMPLACE_JJMMAAAA" ManuallyRouted="false" />
+        <AssociationConnector Association="BDD_SIO7Model.FK_DEPARTEMENT_code_region" ManuallyRouted="false" />
+        <AssociationConnector Association="BDD_SIO7Model.FK_PRESCRIRE_code_dosage" ManuallyRouted="false" />
+        <AssociationConnector Association="BDD_SIO7Model.FK_ETRE_RESPONSABLE_code_secteur" ManuallyRouted="false" />
+        <AssociationConnector Association="BDD_SIO7Model.FK_MEDICAMENT_code_famille" ManuallyRouted="false" />
+        <AssociationConnector Association="BDD_SIO7Model.FK_INCLURE_ff_mois" ManuallyRouted="false" />
+        <AssociationConnector Association="BDD_SIO7Model.FK_GERE_code_region" ManuallyRouted="false" />
+        <AssociationConnector Association="BDD_SIO7Model.FK_INCLURE_tf_Code" ManuallyRouted="false" />
+        <AssociationConnector Association="BDD_SIO7Model.FK_MEDICAMENT_code_present" ManuallyRouted="false" />
+        <AssociationConnector Association="BDD_SIO7Model.FK_OFFRE_depot_legal" ManuallyRouted="false" />
+        <AssociationConnector Association="BDD_SIO7Model.FK_PRESCRIRE_depot_legal" ManuallyRouted="false" />
+        <AssociationConnector Association="BDD_SIO7Model.FK_RAPPORT_DE_VISITE_code_motif" ManuallyRouted="false" />
+        <AssociationConnector Association="BDD_SIO7Model.FK_OFFRE_num_rapport" ManuallyRouted="false" />
+        <AssociationConnector Association="BDD_SIO7Model.FK_PARTICIPE_matricule_praticien" ManuallyRouted="false" />
+        <AssociationConnector Association="BDD_SIO7Model.FK_POSSERDER_code_spec" ManuallyRouted="false" />
+        <AssociationConnector Association="BDD_SIO7Model.FK_POSSERDER_matricule_praticien" ManuallyRouted="false" />
+        <AssociationConnector Association="BDD_SIO7Model.FK_PRATICIEN_code_type" ManuallyRouted="false" />
+        <AssociationConnector Association="BDD_SIO7Model.FK_RAPPORT_DE_VISITE_matricule_praticien" ManuallyRouted="false" />
+        <AssociationConnector Association="BDD_SIO7Model.FK_REMPLACE_matricule_praticien" ManuallyRouted="false" />
+        <AssociationConnector Association="BDD_SIO7Model.FK_REMPLACE_matricule_praticien_PRATICIEN" ManuallyRouted="false" />
+        <AssociationConnector Association="BDD_SIO7Model.FK_PRESCRIRE_code_individu" ManuallyRouted="false" />
+        <AssociationConnector Association="BDD_SIO7Model.FK_REGION_code_secteur" ManuallyRouted="false" />
+        <AssociationConnector Association="BDD_SIO7Model.ORGANISE" ManuallyRouted="false" />
+        <AssociationConnector Association="BDD_SIO7Model.PERTURBE" ManuallyRouted="false" />
+        <AssociationConnector Association="BDD_SIO7Model.PRESENTE" ManuallyRouted="false" />
+        <AssociationConnector Association="BDD_SIO7Model.VISITEUR" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
