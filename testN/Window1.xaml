@@ -1,0 +1,12 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:chartingToolkit="clr-namespace:System.Windows.Controls.DataVisualization.Charting;assembly=System.Windows.Controls.DataVisualization.Toolkit" x:Class="testN.Window1"
+        Title="Window1" Height="440.299" Width="386.567">
+    <Grid>
+        <chartingToolkit:Chart x:Name="chartapute" HorizontalAlignment="Left" Margin="10,10,0,61" Title="Chart Title" Width="359">
+            <chartingToolkit:ColumnSeries DependentValuePath="Value" IndependentValuePath="Key" ItemsSource="{Binding}"/>
+        </chartingToolkit:Chart>
+        <Button x:Name="bouton" Content="Quitter" HorizontalAlignment="Left" Margin="251,375,0,0" VerticalAlignment="Top" Width="96" Height="25" Click="bouton_Click_1"/>
+    </Grid>
+</Window>

@@ -21,9 +21,9 @@ using System.Windows.Navigation;
 
 namespace testN
 {
-    /// <summary>
-    /// Logique d'interaction pour MainWindow.xaml
-    /// </summary>
+    /// 
+    /// \brief Logique d'interaction pour MainWindow.xaml
+    /// 
     public partial class MainWindow : Window
     {
         //private DBSet<MOTIF> customersViewSource;
@@ -34,6 +34,13 @@ namespace testN
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Desactive un bouton d'apres son nom
+        /// (noms entres en dur)
+        /// </summary>
+        /// \param 
+        ///     name Le nom du bouton a desactiver
+        /// 
         private void desBtn(string name)
         {
             switch (name)
@@ -54,36 +61,13 @@ namespace testN
                     btrapp.IsEnabled = false;
                     break;
             }
-            /*
-            if (name == "btprat")
-            {
-                btprat.IsEnabled = false;
-                btcolla.IsEnabled = true;
-                btrapp.IsEnabled = true;
-            }
-            else
-            {
-                if (name == "btcolla")
-                {
-                    btprat.IsEnabled = true;
-                    btcolla.IsEnabled = false;
-                    btrapp.IsEnabled = true;
-                }
-                else
-                {
-                    if (name == "btrapp")
-                    {
-                        btprat.IsEnabled = true;
-                        btcolla.IsEnabled = true;
-                        btrapp.IsEnabled = false;
-                    }
-                    else
-                        MessageBox.Show("euh, erreur");
-                }
-            }
-            */
         }
 
+        /// <summary>
+        /// Handler pour l'evnmt window_loaded
+        /// </summary>
+        /// <param name="sender">objet emetteur</param>
+        /// <param name="e">evenement concerne</param>
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             BDDentites = new BDD_SIO7_CONNSETT();
@@ -98,11 +82,18 @@ namespace testN
             desBtn("btcolla");
         }
 
+        /// <summary>
+        /// Ferme l'application
+        /// </summary>
         private void btquit_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
 
+        /// <summary>
+        /// Rempli la comboBox qui permet de filtrer l'affichage
+        /// avec les noms entres en dur
+        /// </summary>
         private void fillCombo()
         {
             List<string> l = new List<string>();
@@ -111,10 +102,25 @@ namespace testN
             l.Add("Matricule");
             l.Add("Prenom");
             l.Add("Nom");
-
+            
             filtreType.ItemsSource = l;
         }
 
+        /// <summary>
+        /// Rempli la comboBox qui permet de filtrer l'affichage
+        /// avec la liste passee en parametre
+        /// </summary>
+        /// <param name="l">liste de string dont les valeurs seront affichees ds la cb</param>
+        private void fillCombo(List<string> l)
+        {
+            filtreType.ItemsSource = l;
+        }
+
+        /// <summary>
+        /// Rempli la grille qui affiche les informations
+        /// </summary>
+        /// <param name="type">char qui permet d'identifier un type de vue:
+        ///     c->collaborateur;</param>
         private void fillGrid(char type)
         {           
             switch (type)
@@ -251,8 +257,7 @@ namespace testN
          */
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show( typeof(COLLABORATEUR).Name );
-            graphique w = new graphique();
+            Window1 w = new Window1();
             w.Show();
         }
 
